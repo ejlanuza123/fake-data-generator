@@ -30,7 +30,7 @@ Before running the script, ensure you have the following installed:
 ### 1. Clone the Repository
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/your-username/fake-data-generator.git
+git clone https://github.com/ejlanuza123/fake-data-generator.git
 cd fake-data-generator
 ```
 
@@ -40,19 +40,19 @@ Install the required PHP dependencies using Composer:
 composer install
 ```
 
-This will install the `fakerphp/faker` library.
+This will install the `fzaninotto/faker` library.
 
 ### 3. Set Up the Database
 1. **Create the Database**:
    Log in to MySQL and create the `CompanyDB` database:
    ```sql
-   CREATE DATABASE CompanyDB;
+   CREATE DATABASE companydb;
    ```
 
 2. **Create the Tables**:
    Run the following SQL script to create the `Office`, `Employee`, and `Transaction` tables:
    ```sql
-   USE CompanyDB;
+   USE companydb;
 
    -- Create Office Table
    CREATE TABLE Office (
@@ -105,7 +105,7 @@ Open the `generate-fake-data.php` file and update the database connection detail
 ```php
 $host = 'localhost';
 $port = 3307; // Update if your MySQL server uses a different port
-$dbname = 'CompanyDB';
+$dbname = 'companydb';
 $username = 'your_username'; // Replace with your MySQL username
 $password = 'your_password'; // Replace with your MySQL password
 ```
