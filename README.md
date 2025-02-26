@@ -190,12 +190,6 @@ SELECT * FROM Transaction LIMIT 10;
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements.
@@ -204,7 +198,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Contact
 
-For questions or feedback, please contact [Your Name](mailto:your-email@example.com).
+For questions or feedback, please contact [Rodrigo M. Lanuza III](mailto: ejlanuza0123@gmail.com).
 
 ---
 
