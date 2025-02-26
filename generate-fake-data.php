@@ -6,7 +6,7 @@ use Faker\Factory;
 
 // Database configuration
 $host = 'localhost';
-$dbname = 'CompanyDB';
+$dbname = 'companydb';
 $username = 'root';
 $password = 'lanuza';
 
