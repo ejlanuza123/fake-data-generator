@@ -6,14 +6,16 @@ use Faker\Factory;
 
 // Database configuration
 $host = 'localhost';
-$dbname = 'companydb';
+$port = '3307'; // Specify the port here
+$dbname = 'CompanyDB'; // Ensure this matches the actual database name
 $username = 'root';
 $password = 'lanuza';
 
-// Create connection
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    // Include the port in the DSN (Data Source Name)
+    $pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully to the database!";
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }
